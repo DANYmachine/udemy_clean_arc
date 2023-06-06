@@ -1,6 +1,9 @@
+import 'package:dartz/dartz.dart';
 import 'package:udemy_clean_arc/feature/domain/entities/person_entity.dart';
 
+import '../../../core/error/failure.dart';
+
 abstract class PersonRepository {
-  Future<List<PersonEntity>> getAllPersons(int page);
-  Future<List<PersonEntity>> searchPerson(String query);
+  Future<Either<Failure, List<PersonEntity>>> getAllPersons(int page);
+  Future<Either<Failure, List<PersonEntity>>> searchPerson(String query);
 }

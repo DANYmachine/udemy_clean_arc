@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:udemy_clean_arc/feature/data/models/location_model.dart';
 
 class PersonEntity extends Equatable {
   final int id;
@@ -7,8 +8,8 @@ class PersonEntity extends Equatable {
   final String species;
   final String type;
   final String gender;
-  final LocationEntity origin;
-  final LocationEntity location;
+  final LocationModel origin;
+  final LocationModel location;
   final String image;
   final List<String> episode;
   final DateTime created;
